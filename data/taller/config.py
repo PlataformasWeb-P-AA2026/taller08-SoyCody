@@ -1,11 +1,14 @@
 from sqlalchemy import create_engine
 
 # Base de datos sqlite
-engine = create_engine('sqlite:///paises.db')
+# engine = create_engine('sqlite:///paises.db')
 
 # mysql
 # pip install mysql-connector-python
-# engine = create_engine("mysql+mysqlconnector://user:pass@localhost:3306/demo100", echo=True)
+engine = create_engine(
+    "mysql+mysqlconnector://root:admin123@localhost:3306/paises",
+    echo=True
+)
 
 # postgres
 # sudo apt install libpq-dev
